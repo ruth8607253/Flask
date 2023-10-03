@@ -1,8 +1,16 @@
 # Flask
+一個架網站的地方。可以架靜態 & 動態網站。
+## 特性
+1. 偵錯：html或python哪裡寫錯會紅字。
+2. 有python測試介面。
+3. 可以用Jinja(只能在template裡面使用)。
+4. 支援萬國碼。
+5. 免錢。
+
+[連結](https://seanyeh.medium.com/python-web-%E5%BF%AB%E9%80%9F%E5%BB%BA%E7%BD%AE%E7%B6%B2%E7%AB%99%E7%9A%84flask%E5%A5%97%E4%BB%B6-59318830bd63)
 ## 環境建構
 1. 開啟虛擬環境
 2. 建構引入外部套件的環境(在裡面打Flask & 版本)
-
 ## 網站架構
 ```
 from flask import Flask
@@ -16,11 +24,13 @@ def hello():
 
 `from flask import Flask`：從flask引入一個叫做Flask的class
 
-`app`：flask應用程式的實體
+`app`：flask應用程式的類別實體
 
-`__name__`就是`__name__ == "__main__"`那個
+`__name__`：就是`__name__ == "__main__"`那個，將`__name__`傳給Flask
 
-`@app.route("/")`：我要我的根目錄上有什麼
+`@app.route("/")`：下面的函式要載入到哪個url位址中 => 根目錄。
+
+return `"<h1>Hello</h1>aaaa"` ：回傳引號裡的值(到頁面)。
 
 網頁末4碼：模擬是5000，真正是80
 
@@ -79,8 +89,6 @@ templates：樣板
 `<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> `
 
 或是`href="/static/css/style.css"`，但不推薦用這個。這樣以後如果突然想改放在不同資料夾裡的效果還要去查路徑、改，讓程式去找比較實在。
-
-Jinja只能在template裡面使用
 
 ## 網頁b裡開一個連結，把在.py裡的網頁a連到裡面
 在網頁裡面打：
