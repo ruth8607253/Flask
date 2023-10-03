@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+    text-align: justify;
+    background-image: url(../images/bg.png);
+}
+
+.box {
+    width: 1200px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+}
+
+h1 {
+    border: rgb(158, 158, 158) 5px solid;
+    border-radius: 22px;
+    color: rgb(166, 21, 21);
+    text-align: center;
+}
+.green{
+    background-color: rgb(0, 193, 61);
+    margin-top: 4px;
+    padding: 14px 8px;
+    float: left;
+}
+h2{
+    text-indent: 10px;
+}
+h3,
+h4 {
+    text-indent: 20px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.food {
+    float: left;
+    background-color: rgb(235, 204, 167);
+    width: 380px;
+    height: 450px;
+    margin: 20px 10px;
+}
+
+.food_img {
+    margin: 30px 20px 0 20px;
+    border: white 8px solid;
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-indent: 10px;
+    height: 450px;
+}
+
+a:hover {
+    box-shadow: black 0 0 8px;
+}
+
+.bottom {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*
+看一下照片
+background-image: url(./bg.png);
+background-image: url(./p1.jpg);
+background-image: url(./p2.jpg);
+background-image: url(./p3.jpg);
+background-image: url(./p4.jpg);
+background-image: url(./p5.jpg);
+background-image: url(./p6.jpg);
+background-image: url(./photo01.jpg);
+*/
