@@ -3,7 +3,7 @@
 ## 特性
 1. 偵錯：html或python哪裡寫錯會紅字。
 2. 有python測試介面。
-3. 可以用Jinja(只能在template裡面使用)。
+3. 可以用Jinja。
 4. 支援萬國碼。
 5. 免錢。
 
@@ -107,3 +107,10 @@ def hellohello():
 在網頁b的html裡打：
 
 `<p><a href="{{url_for('hellohello')}}">bbb</a></p>`
+
+## Jinja
+1. 只能在template裡面使用。
+2. 有些地方只能用單引號。
+3. 基本語法：
+    1. {{XXX}} 輸出寫法 e.g.href="{{url_for('static',filename='css/bootstrap.css')}}" -> 將static/css/bootstrap.css裡的css設定輸出給該html。
+    2. {%XXX%} 描述語法 e.g.{% extends "base.jinja.html" %} -> 描述：繼承base.jinja.html的所有語法
